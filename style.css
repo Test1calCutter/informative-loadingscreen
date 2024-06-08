@@ -1,0 +1,215 @@
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+audio {
+    display: none;
+}
+nav {
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    font-weight: 100;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.selectors .box {
+    width: 350px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.selectors .box h1 {
+    color: #505050;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.selectors .box i {
+    margin-bottom: 10px;
+}
+
+.selectors .bar {
+    width: 350px;
+    z-index: -1;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+
+/* Sections */
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 200px);
+    position: fixed;
+    top: 200px;
+}
+
+.section .text {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+
+    /* - About Section */
+
+    .about-section .text {
+        position: relative;
+        left: 3%;
+        top: 15%;
+    }
+
+    .about-section h1 {
+        width: 500px;
+        font-size: 5rem;
+        font-weight: 100;
+    }
+    .about-section p {
+        margin-top: -50px;
+        width: 500px;
+        font-weight: 100;
+        color: #696a6c;
+        font-size: 1.4rem;
+    }
+
+    .about-section .image {
+        position: relative;
+        left: 50%;
+        top: -450px;
+        box-shadow: 20px 0px 50px 3px rgb(68, 68, 68);
+        /* __EDIT BELOW IF WANTED__ */
+        /* This adds a rounded/smooth edge on your logo. */
+        border-radius: 100%;
+    } 
+
+
+
+
+    /* - Server Features Section */
+
+    .features-section .content {
+        width: 600px;
+    }
+    .features-section .content .boxes {
+        position: relative;
+        left: -48%;
+    }
+    .features-section .box {
+        width: 200px;
+        height: 245px;
+        float: left;
+        margin: 0 40px;
+        overflow: hidden; /* Hiding too long text to reduce space needed. Remove this or write smaller texts. */
+    }
+    .features-section .box h1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .features-section .box p {
+        text-align: center;
+        margin-top: -10px;
+        color: #59595b;
+    }
+    .features-section .content .image {
+        border-radius: 100%;
+        box-shadow: 20px 0px 50px 3px rgb(68, 68, 68);
+        position: absolute;
+        left: 53%;
+        top: 4%;
+    }
+
+    /* - Team Section */
+    
+    .team-section .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20%;
+    }
+    .team-section .content .title {
+        position: absolute;
+        z-index: 5;
+        top: 20%;
+        letter-spacing: 10px;
+        font-size: 3rem;
+    }
+    .team-section .content .members .box {
+        width: 466px;
+        height: 480px;
+        background-color: #ffffff0e;
+        float: left;
+        margin: 0 28px;
+        border-radius: 10px;
+        text-align: center;        
+    }
+    .team-section .content .members .profile {
+        width: 191px;
+        height: 191px;
+        border-radius: 100%;
+        position: relative;
+    }
+    .team-section .content .members h1 {
+        font-size: 2rem;
+    }
+    .team-section .content .members p {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    .team-section .content .members h3 {
+        margin-top: -25px;
+        font-size: 1rem;
+    }
+    .team-section .content .members .contents {
+        position: relative;
+        top: 10%;
+    }
+
+
+
+/* ICONS */
+.fa-3xl {
+    font-size: 2.7rem;
+}
+
+.selectors i {
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+
+.com {
+    margin-right: 20px;
+}
+
+.feat {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
